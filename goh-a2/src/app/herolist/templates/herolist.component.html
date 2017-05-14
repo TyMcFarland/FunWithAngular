@@ -1,0 +1,5 @@
+<div fxLayout="row" fxLayoutWrap fxLayoutAlign="start stretch">
+<md-card (click)="routeToDetails(hero)" fxFlex *ngFor="let hero of heroes">
+  {{hero.name}}
+  </md-card>
+</div>
