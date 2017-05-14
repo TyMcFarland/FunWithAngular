@@ -1,0 +1,7 @@
+<md-toolbar class="md-whiteframe-1dp" color="primary">
+  <span fxFlex="25"></span>
+  
+  <span (click)="navTo(link)" *ngFor="let link of links">
+    {{link.name}}
+  </span>
+</md-toolbar>

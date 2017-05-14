@@ -1,0 +1,53 @@
+#list-content {
+    margin-top: 70px;
+}
+
+md-list-item {
+    height: 70px;
+    border-bottom: solid 1px #90A4AE;
+    margin-top: 20px;
+}
+.heroAvatar {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+.list-heroName,
+.list-heroDescription {
+    margin: 0;
+    font-size: 13px;
+}
+
+.list-heroDescription {
+    color: grey;
+}
+
+.heroInfo {
+    margin-top: -10px;
+}
+
+.alliance-list {
+    margin: 0;
+}
+
+.alliance-list > li {
+    float: left;
+    font-size: 12px;
+    color: grey;
+    margin-left: 25px;
+}
+
+.alliance-list > li:first-child {
+    list-style-type: none;
+}
+
+.stat {
+    margin-right: 10px;
+}
+
+.stat-value {
+    color: black;
+    font-weight: 700;
+}
