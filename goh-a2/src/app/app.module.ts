@@ -14,12 +14,14 @@ import { HerolistComponent } from './herolist/herolist.component';
 
 import { HerolistService } from './herolist/service/herolist.service';
 import { HerodetailComponent } from './herodetail/herodetail.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HerolistComponent,
-    HerodetailComponent
+    HerodetailComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

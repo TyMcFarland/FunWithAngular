@@ -1,0 +1,14 @@
+<div fxLayout="row">
+    <div fxFlex="25" fxLayout="column">
+        <md-card *ngIf="isDarkside">
+            <div class="character-card-alliance-image dark-side">
+
+            </div>
+        </md-card>
+        <md-card *ngIf="!isDarkside">
+            <div class="character-card-alliance-image light-side">
+
+            </div>
+        </md-card>
+    </div>
+</div>

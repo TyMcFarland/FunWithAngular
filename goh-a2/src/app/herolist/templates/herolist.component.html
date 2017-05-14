@@ -1,5 +1,41 @@
-<div fxLayout="row" fxLayoutWrap fxLayoutAlign="start stretch">
+<!--<div fxLayout="row" fxLayoutWrap fxLayoutAlign="start stretch">
 <md-card (click)="routeToDetails(hero)" fxFlex *ngFor="let hero of heroes">
   {{hero.name}}
   </md-card>
+</div>-->
+
+<div id="list-content" fxLayout="row">
+  <div fxFlex="10"></div>
+  <md-list fxFlex="80">
+    <md-list-item (click)="routeToDetails(hero)" *ngFor="let hero of heroes">
+      <img md-card-avatar class="heroAvatar" src="{{hero.imagePath}}" alt="{{hero.name}}">
+        <div class="heroInfo" fxLayout="column">
+          <div fxLayout="row">
+            <h5 class="list-heroName">{{hero.name}}</h5>
+            <ul class="alliance-list">
+              <li *ngFor="let alliance of hero.alliances">
+                {{alliance}}
+              </li>
+            </ul>
+          </div>
+          <div class="list-heroDescription" fxLayout="row">
+            <p>{{hero.description}}</p>
+          </div>
+          <div class="list-heroDescription" fxLayout="row">
+            <div class="stat">
+            <span class="stat-header">Power: </span><span class="stat-value">{{hero.stats.power}}</span>
+            </div>
+            <div class="stat">
+            <span class="stat-header">Speed: </span><span class="stat-value">{{hero.stats.speed}}</span>
+            </div>
+            <div class="stat">
+            <span class="stat-header">Health: </span><span class="stat-value">{{hero.stats.health}}</span>
+            </div>
+            <div class="stat">
+            <span class="stat-header">Max Damage: </span><span class="stat-value">{{hero.stats.maxDamage}}</span>
+            </div>
+          </div>
+        </div>
+    </md-list-item>
+  </md-list>
 </div>

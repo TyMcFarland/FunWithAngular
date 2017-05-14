@@ -21,7 +21,7 @@ export class HerolistComponent implements OnInit {
   }
 
   routeToDetails(hero) {
-    this.router.navigate(['detail/', hero.name]);
+    this.router.navigate(['detail/', hero.id]);
   }
 
 }
