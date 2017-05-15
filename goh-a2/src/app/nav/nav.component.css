@@ -1,0 +1,12 @@
+md-toolbar {
+    background-color: #90A4AE;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
+
+md-toolbar > a {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+}

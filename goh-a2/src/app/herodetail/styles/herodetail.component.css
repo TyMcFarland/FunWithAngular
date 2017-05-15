@@ -1,0 +1,76 @@
+.content {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.detail-card {
+    padding: 0;
+    border-radius: 5px;
+    position: relative;
+    width: 245px;
+}
+
+.detail-header {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.detail-description {
+    color: grey;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    margin-top: -15px;
+    font-size: 13px;
+}
+
+.detail-stats {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.detail-stat {
+    border-right: solid 1px grey;
+}
+
+.detail-stat:nth-child(2),
+.detail-stat:last-child {
+    border-right: none;
+}
+
+.detail-stat:last-child {
+    margin-top: 5px;
+}
+
+.detail-stat-header {
+    color: grey;
+}
+.detail-stat-value {
+    font-weight: 400;
+    color: black;
+}
+.character-card-alliance-image {
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.character-card-alliance-image > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    position: absolute;
+    top: 105px;
+    left: 85px;
+    border: solid white;
+}
+
+.dark-side {
+    background-image: url('../../../assets/images/dark-side.jpg');
+}
+
+.light-side {
+    background-image: url('../../../assets/images/light-side.jpg');
+}

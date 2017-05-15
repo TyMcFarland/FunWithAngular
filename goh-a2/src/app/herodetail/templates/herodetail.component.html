@@ -1,0 +1,66 @@
+<div class="content" fxLayout="row">
+    <div fxFlex="25" fxLayout="column">
+        <md-card class="detail-card" *ngIf="hero.isDarkSide">
+            <div class="character-card-alliance-image dark-side">
+                <img src="{{hero.imagePath}}">
+            </div>
+            <div class="detail-header" fxLayout="row">
+                <span fxFlex></span>
+                <h5>{{hero.name}}</h5>
+                <span fxFlex></span>
+            </div>
+            <div class="detail-description">
+                {{hero.description}}
+            </div>
+            <div class="detail-stats" fxLayout="row">
+                <div fxFlex="30"></div>
+                <div fxFlex="40" fxLayoutWrap>
+                    <div class="detail-stat" fxFlex fxLayout="column">
+                        <span class="detail-stat-header">Power</span>
+                        <span class="detail-stat-value">{{hero.stats.power}}</span>
+                    </div>
+                    <div class="detail-stat" fxFlex fxLayout="column">
+                        <span class="detail-stat-header">Speed</span>
+                        <span class="detail-stat-value">{{hero.stats.speed}}</span>
+                    </div> 
+                    <div class="detail-stat" fxFlex fxLayout="column">
+                        <span class="detail-stat-header">Health</span>
+                        <span class="detail-stat-value">{{hero.stats.health}}</span>
+                    </div> 
+                </div>
+                <div fxFlex="30"></div>   
+            </div>
+        </md-card>
+        <md-card class="detail-card" *ngIf="!hero.isDarkSide">
+            <div class="character-card-alliance-image light-side">
+                <img src="{{hero.imagePath}}">
+            </div>
+            <div class="detail-header" fxLayout="row">
+                <span fxFlex></span>
+                <h5>{{hero.name}}</h5>
+                <span fxFlex></span>
+            </div>
+            <div class="detail-description">
+                {{hero.description}}
+            </div>
+            <div class="detail-stats" fxLayout="row">
+                <div fxFlex="30"></div>
+                <div fxFlex="40" fxLayoutWrap>
+                    <div class="detail-stat" fxFlex fxLayout="column">
+                        <span class="detail-stat-header">Power</span>
+                        <span class="detail-stat-value">{{hero.stats.power}}</span>
+                    </div>
+                    <div class="detail-stat" fxFlex fxLayout="column">
+                        <span class="detail-stat-header">Speed</span>
+                        <span class="detail-stat-value">{{hero.stats.speed}}</span>
+                    </div> 
+                    <div class="detail-stat" fxFlex fxLayout="column">
+                        <span class="detail-stat-header">Health</span>
+                        <span class="detail-stat-value">{{hero.stats.health}}</span>
+                    </div> 
+                </div>
+                <div fxFlex="30"></div>   
+            </div>
+        </md-card>
+    </div>
+</div>
