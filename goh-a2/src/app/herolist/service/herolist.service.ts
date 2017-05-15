@@ -26,6 +26,7 @@ export class HerolistService {
       id: '1',
       name: 'Admiral Ackbar',
       role: 'Support',
+      isDarkSide: false,
       imagePath: 'assets/images/ackbar.jpg',
       description: 'Rebel Support that can Dispel debuffs and grant allies extra turns',
       alliances: [
@@ -45,6 +46,7 @@ export class HerolistService {
       id: '2',
       name: 'Princess Leia',
       role: 'Attacker',
+      isDarkSide: false,
       imagePath: 'assets/images/leia.jpg',
       description: 'Well-rounded Rebel Attacker with extra attacks, Stealth, and team Critical bonuses.',
       alliances: [
@@ -63,6 +65,7 @@ export class HerolistService {
       id: '3',
       name: 'Han Solo',
       role: 'Tank',
+      isDarkSide: false,
       imagePath: 'assets/images/solo.jpg',
       description: 'Daring Attacker that stacks Criticals in his favor and always shoots first',
       alliances: [
@@ -82,6 +85,7 @@ export class HerolistService {
       id: '4',
       name: 'Count Dooku',
       role: 'Attacker',
+      isDarkSide: true,
       imagePath: 'assets/images/newDooku.jpg',
       description: 'High-damage attacker with stun, bonus attacks, and incredible counter-attacking.',
       alliances: [
@@ -101,6 +105,7 @@ export class HerolistService {
       id: '5',
       name: 'Emperor Palpatine',
       role: 'Attacker',
+      isDarkSide: true,
       imagePath: 'assets/images/palpatine.jpg',
       description: 'Overwhelming Sith Support who inflicts Shock and can Stun targets for multiple turns',
       alliances: [
@@ -120,7 +125,8 @@ export class HerolistService {
       id: '6',
       name: 'Darth Vader',
       role: 'Attacker',
-      imagePath: 'assets/images/vader.jpg',
+      isDarkSide: true,
+      imagePath: 'assets/images/lord-vader.jpg',
       description: 'Fearsome Attacker that applies AoE Damage Over Time, and crushes debuffed targets for extra turns',
       alliances: [
         'Dark Side',
